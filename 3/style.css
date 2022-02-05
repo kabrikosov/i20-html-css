@@ -1,0 +1,112 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+html, body {
+    height: 100%;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em 3em 2em 3em;
+    max-width: 75%;
+}
+
+#card>*{
+    margin: 0 0 1em 0;
+}
+
+input[type="submit"] {
+    width: 10em;
+    padding: 1em;
+    background-color: black;
+    border-radius: 2em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 1em 0;
+}
+
+#foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+    color: rgba(0, 0, 0, 70%);
+}
+.notransform {
+    text-transform: none;
+}
+#remlabel {
+    color: rgba(0, 0, 0, 30%);
+}
+form>div:nth-child(2){
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 50%);
+    font-size: 0.7em;
+}
+
+a.password-control{
+    align-self: end;
+    position: relative;
+    bottom: 3em;
+    right: 1em;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("no-view.svg") 0 0 no-repeat;
+}
+
+a.password-control.view{
+    background: url("view.svg") 0 0 no-repeat;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 10%);
+    outline: none;
+    background: white !important;
+}
+
+input[type="checkbox"] {
+    border: 1px solid rgba(0, 0, 0, 10%);
+    outline: none;
+}

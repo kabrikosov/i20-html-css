@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="card">
+    <h1>Account login</h1>
+    <form action="index.html" method="post">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required>
+        </div>
 
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" required>
+            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+        </div>
+        <div id="foot">
+            <label class="notransform" id="remlabel">
+                <input type="checkbox" name="remember" id="remember">
+                Remember me
+            </label>
+
+            <a href="forgot.html">Forgot Password?</a>
+        </div>
+
+        <input type="submit" value="Login" id="submit">
+    </form>
+</div>
 </body>
+<script>
+    function show_hide_password(target) {
+        var input = document.getElementById('password');
+        if (input.getAttribute('type') === 'password') {
+            target.classList.add('view');
+            input.setAttribute('type', 'text');
+        } else {
+            target.classList.remove('view');
+            input.setAttribute('type', 'password');
+        }
+        return false;
+    }
+</script>
 </html>
