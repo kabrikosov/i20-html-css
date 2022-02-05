@@ -27,7 +27,7 @@ html, body {
 input[type="submit"] {
     width: 10em;
     padding: 1em;
-    background-color: black;
+    background-color: #333333;
     border-radius: 2em;
     color: white;
     font-family: 'Montserrat', sans-serif;
