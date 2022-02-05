@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Запись на курсы программирования</h1>
+<hr/>
+<form action="index.html" method="post">
+    <div class="normal" id="nameinput">
+        <label for="name">
+            Имя:
+        </label>
+        <input type="text" id="name" name="name" required placeholder="Иван"/>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" value="1" name="lang" required checked/>
+            Java
+        </label>
+        <label>
+            <input type="radio" value="2" name="lang" required/>
+            C++
+        </label>
+        <label>
+            <input type="radio" value="3" name="lang" required/>
+            Python
+        </label>
+        <label>
+            <input type="radio" value="4" name="lang" required/>
+            PHP
+        </label>
+        <label>
+            <input type="radio" value="5" name="lang" required/>
+            JavaScript
+        </label>
+    </div>
+    <div class="normal" id="dop">
+        <label>
+            Дополнительная информация:
+            <textarea name="dopinfo" placeholder="Есть опыт программирования на Java"></textarea>
+        </label>
+    </div>
+    <div class="normal" id="secretword">
+        <label for="password">Секретное слово:</label>
+        <input type="password" id="password" name="password" value="notsecretword">
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="checkbox" required>
+            С правилами ознакомился и согласен.
+        </label>
+    </div>
+
+    <div class="radio">
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </div>
+</form>
+<hr>
+<p>Made by kabrikosov</p>
+</body>
+</html>

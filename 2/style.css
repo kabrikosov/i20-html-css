@@ -1,0 +1,29 @@
+.radio {
+    display: flex;
+    flex-direction: row;
+}
+.radio *{
+    margin: 0.2em;
+}
+body {
+    width: 80%;
+}
+
+div {
+    margin-bottom: 1.5em;
+}
+
+.normal{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.normal label{
+    margin: 0;
+}
+
+textarea {
+    min-width: 200px;
+    min-height: 80px;
+}
