@@ -129,7 +129,7 @@ body {
     position: relative;
     bottom: 1em;
     left: 1em;
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out .5s;
 }
 
 .hidden {
