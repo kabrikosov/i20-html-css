@@ -1,0 +1,138 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 250px;
+    max-height: 150px;
+}
+
+.news-card>*{
+    padding: .5em;
+}
+
+.news-card__content {
+
+}
+
+.news-card__date {
+    align-self: end;
+    font-weight: 600;
+}
+
+.news-card__title {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.bg-light-blue {
+    background-color: #dce8ee;
+}
+
+.blue-border {
+    border-color: #4a8ea8 ;
+}
+
+.border-round-05em {
+    border-radius: .5em;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__pic {
+    display: inline-block;
+    text-align: center;
+    font-size: 5em;
+    width: 100px;
+    padding: 10% 0 10% 0;
+}
+
+.card__caption {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.bg-gray {
+    background-color: #eeeeee;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-yellow {
+    background-color: #eebc40;
+}
+
+.bg-green {
+    background-color: #269f5d;
+}
+
+.bg-blue {
+    background-color: #65c2dc;
+}
+
+.pt-1em {
+    padding-top: 1em;
+}
+.bg-white {
+    background-color: white;
+}
+
+.pb-05em {
+    padding-bottom: .5em;
+}
+
+.pt-05em {
+    padding-top: .5em;
+}
+
+.ml-05em {
+    margin-left: .5em;
+}
+
+.shadow {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);;
+}
+
+.card__caption__update-icon {
+    display: inline-block;
+    opacity: 100%;
+    background: url("update.svg") 0 0 no-repeat;
+    height: 15px;
+    width: 15px;
+    align-self: end;
+    position: relative;
+    bottom: 1em;
+    left: 1em;
+    transition: opacity ease-in-out 1s;
+}
+
+.hidden {
+    display: inline-block;
+    opacity: 0;
+}
